@@ -82,7 +82,7 @@ Total TVShows = CALCULATE([Total Titles], 'netflix_titles'[type] = "TV Show")
 ## 🪪 License
 This project is licensed under the [MIT License](LICENSE).
 
-<img width="1918" height="753" alt="image" src="https://github.com/user-attachments/assets/9780da68-6166-4bdd-8aaf-f370ed796f5b" />
+
 
 
 
