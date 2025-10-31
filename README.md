@@ -26,6 +26,7 @@ It demonstrates end-to-end data analytics — from *data cleaning and transforma
 5. *Business Insights*
    - Extracted meaningful KPIs like most common ratings, content growth, and type-based breakdown.
 
+---
 ## 📊 Power BI Dashboard
 
 ### *Visuals Created*
@@ -40,11 +41,14 @@ It demonstrates end-to-end data analytics — from *data cleaning and transforma
 - *Slicers*
   - Country, Release Year, and Type
 
+---
+
 ### *DAX Measures Used*
 ```DAX
 Total Titles = DISTINCTCOUNT('netflix_titles'[show_id])
 Total Movies = CALCULATE([Total Titles], 'netflix_titles'[type] = "Movie")
 Total TVShows = CALCULATE([Total Titles], 'netflix_titles'[type] = "TV Show")
+----
 
 ## 📁 Repository Contents
 | Folder/File | Description |
@@ -58,6 +62,16 @@ Total TVShows = CALCULATE([Total Titles], 'netflix_titles'[type] = "TV Show")
 | *Netflix_PowerBI_SQL_Final_Report.docx* | Final report and explanation |
 | *README.md* | Project documentation |
 
+----
+## 📁 Repository Structure
+
+- [Dataset](./Dataset) → Contains raw and cleaned Netflix dataset files.
+- [SQL FILES](./SQL%20FILES) → SQL scripts for data exploration, cleaning, and insights.
+- [POWERBI FILES](./POWERBI%20FILES) → Power BI dashboards and data model files.
+- [Reports](./Reports) → Final reports and project documentation.
+
+-----
+
 ## 💡 Key Insights
 - Most Netflix content is *Movies* compared to TV Shows.  
 - *TV-MA* and *TV-14* are the most frequent content ratings.  
@@ -65,6 +79,7 @@ Total TVShows = CALCULATE([Total Titles], 'netflix_titles'[type] = "TV Show")
 - *United States* and *India* are the top content producers.  
 - Drama, Comedy, and Action dominate the platform globally.
 
+----
 
 ### 🚀 *Add Future Enhancements*
 ```markdown
@@ -73,12 +88,12 @@ Total TVShows = CALCULATE([Total Titles], 'netflix_titles'[type] = "TV Show")
 - Include *predictive visuals* for upcoming content trends.  
 - Use *Power BI Service* for publishing interactive dashboards online.  
 - Integrate with Netflix API for real-time updates.
-
+----
 ## 👩‍💻 Author
 *Shrutika*  
 💼 Data Analyst | SQL | Power BI | Data Visualization  
 🔗 [LinkedIn Profile](www.linkedin.com/in/shrutikakole)
-
+----
 ## 🪪 License
 This project is licensed under the [MIT License](LICENSE).
 
